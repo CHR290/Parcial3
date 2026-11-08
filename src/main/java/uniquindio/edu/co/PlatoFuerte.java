@@ -1,5 +1,7 @@
 package uniquindio.edu.co;
 
+import uniquindio.edu.co.Enums.TipoPreparacion;
+
 public class PlatoFuerte extends Producto {
     private int pesoGramos;
     private TipoPreparacion tipoPreparacion;

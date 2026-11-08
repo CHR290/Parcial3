@@ -1,5 +1,8 @@
 package uniquindio.edu.co;
 
+import uniquindio.edu.co.Enums.EstadoPedido;
+import uniquindio.edu.co.Enums.ModalidadEntrega;
+
 import java.util.Date;
 
 public class Pedido {
