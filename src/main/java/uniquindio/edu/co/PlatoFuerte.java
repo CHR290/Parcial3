@@ -2,14 +2,14 @@ package uniquindio.edu.co;
 
 public class PlatoFuerte extends Producto {
     private int pesoGramos;
-    private double temperaturaAlmacenamiento;
-    private boolean requiereRefrigeracion;
+    private TipoPreparacion tipoPreparacion;
+    private boolean coccionAprobada;
 
-    public PlatoFuerte(String codigo, String nombre, String descripcion, double precioBase, int tiempoPreparacionMinutos, int pesoGramos, double temperaturaAlmacenamiento, boolean requiereRefrigeracion) {
+    public PlatoFuerte(String codigo, String nombre, String descripcion, double precioBase, int tiempoPreparacionMinutos, int pesoGramos, TipoPreparacion tipoPreparacion, boolean coccionAprobada) {
         super(codigo, nombre, descripcion, precioBase, tiempoPreparacionMinutos);
         this.pesoGramos = pesoGramos;
-        this.temperaturaAlmacenamiento = temperaturaAlmacenamiento;
-        this.requiereRefrigeracion = requiereRefrigeracion;
+        this.tipoPreparacion = tipoPreparacion;
+        this.coccionAprobada = coccionAprobada;
     }
 
     public int getPesoGramos() {
@@ -20,19 +20,19 @@ public class PlatoFuerte extends Producto {
         this.pesoGramos = pesoGramos;
     }
 
-    public double getTemperaturaAlmacenamiento() {
-        return temperaturaAlmacenamiento;
+    public TipoPreparacion getTipoPreparacion() {
+        return tipoPreparacion;
     }
 
-    public void setTemperaturaAlmacenamiento(double temperaturaAlmacenamiento) {
-        this.temperaturaAlmacenamiento = temperaturaAlmacenamiento;
+    public void setTipoPreparacion(TipoPreparacion tipoPreparacion) {
+        this.tipoPreparacion = tipoPreparacion;
     }
 
-    public boolean isRequiereRefrigeracion() {
-        return requiereRefrigeracion;
+    public boolean isCoccionAprobada() {
+        return coccionAprobada;
     }
 
-    public void setRequiereRefrigeracion(boolean requiereRefrigeracion) {
-        this.requiereRefrigeracion = requiereRefrigeracion;
+    public void setCoccionAprobada(boolean coccionAprobada) {
+        this.coccionAprobada = coccionAprobada;
     }
 }

@@ -1,8 +1,10 @@
 package uniquindio.edu.co;
 
+import java.util.Date;
+
 public class Pedido {
     private String codigo;
-    private String fecha;
+    private Date fecha;
     private Cliente cliente;
     private ModalidadEntrega modalidadEntrega;
     private String lineas;
@@ -11,7 +13,7 @@ public class Pedido {
     private String distanciaKm;
     private double costoDomicilio;
 
-    public Pedido(String codigo, String fecha, Cliente cliente, ModalidadEntrega modalidadEntrega, String lineas, EstadoPedido estado, boolean servicioDomicilio, String distanciaKm, double costoDomicilio) {
+    public Pedido(String codigo, Date fecha, Cliente cliente, ModalidadEntrega modalidadEntrega, String lineas, EstadoPedido estado, boolean servicioDomicilio, String distanciaKm, double costoDomicilio) {
         this.codigo = codigo;
         this.fecha = fecha;
         this.cliente = cliente;
@@ -31,11 +33,11 @@ public class Pedido {
         this.codigo = codigo;
     }
 
-    public String getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
